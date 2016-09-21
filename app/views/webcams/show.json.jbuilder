@@ -1,1 +1,1 @@
-json.partial! "webcams/webcam", webcam: @webcam
+json.partial! "webcams/webcam", image: asset_path(@webcam.get_image(params[:pic_id]))

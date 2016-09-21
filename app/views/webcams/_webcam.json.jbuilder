@@ -1,2 +1,1 @@
-json.extract! webcam, :id, :name, :created_at, :updated_at
-json.url webcam_url(webcam, format: :json)
+json.extract! image: asset_path(@webcam.get_image(params[:pic_id]))
