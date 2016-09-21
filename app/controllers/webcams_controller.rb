@@ -4,7 +4,7 @@ class WebcamsController < ApplicationController
   # GET /webcams/1
   # GET /webcams/1.json
   def show
-    render json: {image: @webcam.get_image(params[:pic_id])}, status: 200
+    render json: {image: asset_path(@webcam.get_image(params[:pic_id]))}, status: 200
   end
 
   private
