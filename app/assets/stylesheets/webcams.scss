@@ -1,0 +1,13 @@
+.container{
+	position: relative;
+}
+#web_cam_tex {
+	position: absolute;
+	top: 50%;
+	left: 30%;
+	color: #fff;
+	font-size: 30px;
+	background-color:rgba(0, 0, 0, 0.8);
+	padding: 20px;
+	border: 1px solid rgba(244, 244, 244, 0.9);
+}

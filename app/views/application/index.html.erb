@@ -1,0 +1,21 @@
+<%= content_for :side_bar do%>
+<div class="sidebar-nav col-md-12">
+<form class="form-horizontal" id="web_cams" action='/web_cams/' method="get">
+	<div class="form-group has-success has-feedback">
+			<select class="form-control" id="cam">
+				<option value="">Select Web Cam</option>
+				<option value='1'>Web Cam 1</option>
+				<option value='2'>Web Cam 2</option>
+			</select>
+		</div>
+		<div class="form-group has-success has-feedback">
+			<button type="submit" class="btn btn-default">Submit</button>
+		</div>
+</form>
+</div>
+<%end%>
+
+<div id="web_cam_tex">
+	Web Cam <span id="web_cam_id"></span>
+</div>
+<img id='show-cam' src="/assets/webcam1-1.jpg" alt="..." class="img-thumbnail">
