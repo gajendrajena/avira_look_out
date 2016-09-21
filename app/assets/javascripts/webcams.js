@@ -46,7 +46,7 @@ $(document).ready(function(){
 			$('#show-cam').prop('src', data.image);
 			$('#web_cam_id').text(web_cam_id);
 
-			setTimeout(fetch_image, 3000)
+			setTimeout(fetch_image, 5000)
 		}
 	};
 
